@@ -1,0 +1,20 @@
+{
+	"klubben": {
+		"blanketter": "ny-medlem.pdf",
+		"medlemmar": {
+			"christer nilsson": {
+				"trippel trekant": "trippelTrekant.txt",
+				"turneringar": "turneringar.txt"
+			},
+			"jouko liistamo": "jouko.txt"
+		}
+	},
+	"externa länkar": {
+		"chess.com" : "chess.com",
+		"lichess": "https://lichess.org"
+	},
+	"rating": {
+		"seniorschack": "https://member.schack.se/ShowClubRatingServlet?clubid=40628",
+		"sällskapet": "https://member.schack.se/ShowClubRatingServlet?clubid=38472"
+	}
+}
