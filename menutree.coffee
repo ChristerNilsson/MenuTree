@@ -16,7 +16,7 @@ class Button
 window.preload = -> tree = loadJSON 'menutree.json'
 
 window.setup = ->
-	createCanvas 400, 300
+	createCanvas 200, 300
 	noStroke()
 	current = if path.length == 0 then tree else _.get tree, path
 	echo 'path',path
@@ -32,15 +32,15 @@ draw = ->
 
 	echo 'draw', typeof current
 	background 'gray'
+	if 'string' == typeof current
+		text current,10,200
+	if 'object' == typeof current
+		for button in buttons
+			button.draw()
 	s = path.join ' • '
 	fill 'white'
 	echo 's',s
 	text s, 10, 20
-	if 'string' == typeof current
-		text current,10,20
-	if 'object' == typeof current
-		for button in buttons
-			button.draw()
 
 update = ->
 	current = if path.length == 0 then tree else _.get tree, path
